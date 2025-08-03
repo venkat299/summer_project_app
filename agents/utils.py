@@ -1,7 +1,13 @@
 import os
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
-from crewai_tools import SerperDevTool, EXASearchTool, GithubSearchTool
+from crewai_tools import (
+    SerperDevTool,
+    EXASearchTool,
+    GithubSearchTool,
+    ScrapeWebsiteTool
+)
+
 
 from crewai import LLM  
 
@@ -17,6 +23,7 @@ llm = LLM(
 # Centralized tools for agents to use
 search_tool = SerperDevTool()
 exa_search_tool = EXASearchTool()
+web_scraper_tool = ScrapeWebsiteTool()
 github_search_tool = GithubSearchTool(
     gh_token=os.getenv("GH_TOKEN"),
     config=dict(

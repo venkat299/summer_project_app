@@ -1,10 +1,20 @@
-import os
+
 from crewai import Crew, Process
 from dotenv import load_dotenv
 
 # The __init__.py file in the 'agents' directory allows for this clean import
-from agents import JobSpecAnalystAgent, SourcingAgent
-from tasks import analysis_task, sourcing_task
+from agents import (
+    JobSpecAnalystAgent,
+    SourcingAgent,
+    ProfileEnrichmentAgent,
+    CandidateRankingAgent
+)
+from tasks import (
+    analysis_task,
+    sourcing_task,
+    enrichment_task,
+    ranking_task
+)
 
 # Load environment variables from a .env file
 load_dotenv()
@@ -12,6 +22,9 @@ load_dotenv()
 # Instantiate agents
 job_spec_analyst = JobSpecAnalystAgent()
 sourcing_specialist = SourcingAgent()
+enrichment_specialist = ProfileEnrichmentAgent()
+ranking_assessor = CandidateRankingAgent()
+
 
 # Job description
 # job_description = """
@@ -48,14 +61,27 @@ job_description = """
 
 
 # Define tasks
-task1 = analysis_task(job_spec_analyst, job_description)
-task2 = sourcing_task(sourcing_specialist, task1)
+# Define tasks and chain them together
+task1_analysis = analysis_task(job_spec_analyst, job_description)
+task2_sourcing = sourcing_task(sourcing_specialist, task1_analysis)
+task3_enrichment = enrichment_task(enrichment_specialist, task2_sourcing)
+# The ranking task needs context from both the analysis (rubric) and enrichment (profiles) tasks
+task4_ranking = ranking_task(ranking_assessor, [task1_analysis, task3_enrichment])
 
-# Form the crew
-# Note: The LLM is now managed within the agent definitions, so it's not needed here.
+# Form the crew with all agents and tasks
 crew = Crew(
-    agents=[job_spec_analyst, sourcing_specialist],
-    tasks=[task1, task2],
+    agents=[
+        job_spec_analyst,
+        sourcing_specialist,
+        enrichment_specialist,
+        ranking_assessor
+    ],
+    tasks=[
+        task1_analysis,
+        task2_sourcing,
+        task3_enrichment,
+        task4_ranking
+    ],
     process=Process.sequential,
     verbose=True
 )

@@ -1,2 +1,4 @@
 from .job_spec_analyst import JobSpecAnalystAgent
 from .sourcing_agent import SourcingAgent
+from .candidate_ranking import CandidateRankingAgent
+from .profile_enrichment import ProfileEnrichmentAgent
