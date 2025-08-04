@@ -42,7 +42,7 @@ ranking_assessor = CandidateRankingAgent()
 # Job description
 job_description = """
 **Position:** Senior Python Developer
-**Location:** San Francisco, CA (Hybrid)
+**Location:** India, Chennai (Hybrid)
 **Experience:** 5+ years
 **Responsibilities:**
 - Design, build, and maintain efficient, reusable, and reliable Python code.

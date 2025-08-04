@@ -122,8 +122,8 @@ if st.button("✨ Find and Rank Candidates", type="primary"):
                     # This pattern looks for the 'search_query' argument passed to the search tool
                     queries = re.findall(r"\"search_query\": \"(.*?)\"", all_logs, re.DOTALL)
                     if queries:
-                        for q in set(queries): # Use set to show only unique queries
-                            st.code(q, language="text")
+                        # for q in set(queries): # Use set to show only unique queries
+                        st.code(queries, language="text")
                     else:
                         st.warning("No specific X-Ray queries were captured. They may be in the full log below.")
 
