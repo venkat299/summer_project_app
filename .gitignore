@@ -14,3 +14,4 @@ agents.py
 crewai-rag-tool.lock
 uv.lock
 db/chroma.sqlite3
+.DS_Store

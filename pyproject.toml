@@ -12,4 +12,5 @@ dependencies = [
     "google-generativeai>=0.8.5",
     "pygithub>=2.7.0",
     "python-dotenv>=1.1.1",
+    "streamlit>=1.47.1",
 ]
