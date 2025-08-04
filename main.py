@@ -1,8 +1,8 @@
 
 from crewai import Crew, Process
 from dotenv import load_dotenv
+import logging
 
-# The __init__.py file in the 'agents' directory allows for this clean import
 from agents import (
     JobSpecAnalystAgent,
     SourcingAgent,
@@ -19,6 +19,19 @@ from tasks import (
 # Load environment variables from a .env file
 load_dotenv()
 
+# --- Start of Logging Configuration ---
+# Configure logging to write to a file.
+# CrewAI's verbose mode (verbose=2) will use this configuration.
+logging.basicConfig(
+    filename='crew_execution.log',
+    filemode='w',  # Overwrite the log file on each run
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+# --- End of Logging Configuration ---
+
+
+
 # Instantiate agents
 job_spec_analyst = JobSpecAnalystAgent()
 sourcing_specialist = SourcingAgent()
@@ -27,37 +40,37 @@ ranking_assessor = CandidateRankingAgent()
 
 
 # Job description
-# job_description = """
-# **Position:** Senior Python Developer
-# **Location:** San Francisco, CA (Hybrid)
-# **Experience:** 5+ years
-# **Responsibilities:**
-# - Design, build, and maintain efficient, reusable, and reliable Python code.
-# - Integration of user-facing elements developed by front-end developers with server-side logic.
-# - Solve complex performance problems and architectural challenges.
-# - Integration of data storage solutions.
-# **Skills:**
-# - Proficient in Python, with a good knowledge of its ecosystems.
-# - Familiarity with some Python web framework, such as Django, Flask, or FastAPI.
-# - Solid understanding of object-oriented programming.
-# - Familiarity with ORM (Object Relational Mapper) libraries.
-# - Able to create database schemas that represent and support business processes.
-# - Proficient understanding of code versioning tools, such as Git.
-# """
 job_description = """
-**Position:** Industrial Engineer
-**Location:** India, Chennai (Hybrid)
+**Position:** Senior Python Developer
+**Location:** San Francisco, CA (Hybrid)
 **Experience:** 5+ years
 **Responsibilities:**
-- Optimise process.
-- Analysis and prediction.
-- Solve complex  problems .
+- Design, build, and maintain efficient, reusable, and reliable Python code.
+- Integration of user-facing elements developed by front-end developers with server-side logic.
+- Solve complex performance problems and architectural challenges.
+- Integration of data storage solutions.
 **Skills:**
 - Proficient in Python, with a good knowledge of its ecosystems.
 - Familiarity with some Python web framework, such as Django, Flask, or FastAPI.
-- Operation Research
-- Datascience
+- Solid understanding of object-oriented programming.
+- Familiarity with ORM (Object Relational Mapper) libraries.
+- Able to create database schemas that represent and support business processes.
+- Proficient understanding of code versioning tools, such as Git.
 """
+# job_description = """
+# **Position:** Industrial Engineer
+# **Location:** India, Chennai (Hybrid)
+# **Experience:** 5+ years
+# **Responsibilities:**
+# - Optimise process.
+# - Analysis and prediction.
+# - Solve complex  problems .
+# **Skills:**
+# - Proficient in Python, with a good knowledge of its ecosystems.
+# - Familiarity with some Python web framework, such as Django, Flask, or FastAPI.
+# - Operation Research
+# - Datascience
+# """
 
 
 # Define tasks
@@ -83,7 +96,8 @@ crew = Crew(
         task4_ranking
     ],
     process=Process.sequential,
-    verbose=True
+    verbose=True,
+    output_log_file = "crew_log"
 )
 
 # Kick off the crew's work
@@ -93,3 +107,13 @@ if __name__ == "__main__":
     print("## Here is the final result")
     print("########################\n")
     print(result)
+    logging.info("Crew kickoff finished.")
+
+    print("\n\n########################")
+    print("## Here is the final result")
+    print("########################\n")
+    print(result)
+
+    print("\n\n########################")
+    print("## All logs have been saved to crew_execution.log")
+    print("########################\n")
