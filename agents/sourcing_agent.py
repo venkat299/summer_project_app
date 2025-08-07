@@ -18,6 +18,6 @@ def SourcingAgent():
         llm=llm,
         verbose=True,
         memory=False,
-        tools=[search_tool, exa_search_tool, github_search_tool],
+        tools=[search_tool, exa_search_tool], # github_search_tool
         allow_delegation=False
     )

@@ -17,6 +17,6 @@ def CandidateRankingAgent():
         llm=llm,
         verbose=True,
         memory=True,
-        tools=[], # No specific tools needed, it reasons over the provided context
+        tools=[],
         allow_delegation=False
     )

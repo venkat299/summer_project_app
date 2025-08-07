@@ -1,0 +1,1375 @@
+2025-08-04 17:30:14: task_name="None", task="
+          Analyze the following job description and transform it into a machine-readable hiring rubric.
+          The rubric should be a JSON object with clear categories for skills, experience, and responsibilities.
+          Each item in the rubric should have a 'weight' from 1 to 5, where 5 is most important.
+
+          Job Description:
+          ---
+          
+**Position:** Senior Python Developer
+**Location:** San Francisco, CA (Hybrid)
+**Experience:** 5+ years
+**Responsibilities:**
+- Design, build, and maintain efficient, reusable, and reliable Python code.
+- Integration of user-facing elements developed by front-end developers with server-side logic.
+- Solve complex performance problems and architectural challenges.
+- Integration of data storage solutions.
+**Skills:**
+- Proficient in Python, with a good knowledge of its ecosystems.
+- Familiarity with some Python web framework, such as Django, Flask, or FastAPI.
+- Solid understanding of object-oriented programming.
+- Familiarity with ORM (Object Relational Mapper) libraries.
+- Able to create database schemas that represent and support business processes.
+- Proficient understanding of code versioning tools, such as Git.
+
+          ---
+      ", agent="Expert Technical Recruiter", status="started"
+2025-08-04 17:30:20: task_name="None", task="
+          Analyze the following job description and transform it into a machine-readable hiring rubric.
+          The rubric should be a JSON object with clear categories for skills, experience, and responsibilities.
+          Each item in the rubric should have a 'weight' from 1 to 5, where 5 is most important.
+
+          Job Description:
+          ---
+          
+**Position:** Senior Python Developer
+**Location:** San Francisco, CA (Hybrid)
+**Experience:** 5+ years
+**Responsibilities:**
+- Design, build, and maintain efficient, reusable, and reliable Python code.
+- Integration of user-facing elements developed by front-end developers with server-side logic.
+- Solve complex performance problems and architectural challenges.
+- Integration of data storage solutions.
+**Skills:**
+- Proficient in Python, with a good knowledge of its ecosystems.
+- Familiarity with some Python web framework, such as Django, Flask, or FastAPI.
+- Solid understanding of object-oriented programming.
+- Familiarity with ORM (Object Relational Mapper) libraries.
+- Able to create database schemas that represent and support business processes.
+- Proficient understanding of code versioning tools, such as Git.
+
+          ---
+      ", agent="Expert Technical Recruiter", status="completed", output="```json
+{
+  "rubric": {
+    "experience": {
+      "years_of_experience": {
+        "description": "5+ years of experience as a Python Developer",
+        "weight": 5
+      }
+    },
+    "skills": {
+      "python_proficiency": {
+        "description": "Proficient in Python with a good knowledge of its ecosystems",
+        "weight": 5
+      },
+      "web_framework_familiarity": {
+        "description": "Familiarity with Python web frameworks (Django, Flask, FastAPI)",
+        "weight": 4
+      },
+      "oop_understanding": {
+        "description": "Solid understanding of object-oriented programming",
+        "weight": 4
+      },
+      "orm_familiarity": {
+        "description": "Familiarity with ORM (Object Relational Mapper) libraries",
+        "weight": 3
+      },
+      "database_schemas": {
+        "description": "Able to create database schemas that represent and support business processes",
+        "weight": 4
+      },
+      "version_control": {
+        "description": "Proficient understanding of code versioning tools (Git)",
+        "weight": 5
+      }
+    },
+    "responsibilities": {
+      "code_design_and_maintenance": {
+        "description": "Design, build, and maintain efficient, reusable, and reliable Python code",
+        "weight": 5
+      },
+      "frontend_integration": {
+        "description": "Integration of user-facing elements developed by front-end developers with server-side logic",
+        "weight": 4
+      },
+      "performance_and_architecture": {
+        "description": "Solve complex performance problems and architectural challenges",
+        "weight": 5
+      },
+      "data_storage_integration": {
+        "description": "Integration of data storage solutions",
+        "weight": 4
+      }
+    }
+  }
+}
+```"
+2025-08-04 17:30:20: task_name="None", task="
+            Using the hiring rubric provided, search for potential candidates on platforms like
+            LinkedIn, GitHub, and other relevant developer communities. Your goal is to identify
+            5-10 promising candidates who closely match the key skills and experience.
+        ", agent="Master Sourcing Specialist", status="started"
+2025-08-04 17:30:35: task_name="None", task="
+            Using the hiring rubric provided, search for potential candidates on platforms like
+            LinkedIn, GitHub, and other relevant developer communities. Your goal is to identify
+            5-10 promising candidates who closely match the key skills and experience.
+        ", agent="Master Sourcing Specialist", status="completed", output="```markdown
+# Potential Python Developer Candidates
+
+Here's a list of potential candidates based on the search results, focusing on those with 5+ years of experience and relevant skills:
+
+1.  **Polina Reviakina**
+    *   [LinkedIn Profile](https://rs.linkedin.com/in/polina-reviakina)
+    *   **Justification:** Backend Software Engineer with 5+ years of experience in Django, FastAPI, and Flask.
+
+2.  **Nikhil Sankpal**
+    *   [LinkedIn Profile](https://in.linkedin.com/in/nikhil-sankpal-092a46223)
+    *   **Justification:** Python Developer with 5+ years in web development, specializing in Django & REST APIs.
+
+3.  **Sakshi Sharma**
+    *   [LinkedIn Profile](https://www.linkedin.com/in/its-sakshi/)
+    *   **Justification:** Lead Python Backend Engineer with 5+ years specializing in Python backend development, proficient in Flask and Django frameworks.
+
+4.  **Sumanth Reddy**
+    *   [LinkedIn Profile](https://www.linkedin.com/in/sumanthreddy-python)
+    *   **Justification:** Python backend engineer with 5+ years of experience building web applications and APIs.
+
+5.  **Avi Jadhav**
+    *   [LinkedIn Profile](https://in.linkedin.com/in/avi-jadhav-9a4888266)
+    *   **Justification:** Python Django developer with over 5+ years of hands-on experience in crafting web applications.
+
+6.  **Nazar Saifnijat**
+    *   [LinkedIn Profile](https://www.linkedin.com/in/nazar-saifnijat-357a7678/)
+    *   **Justification:** Experienced Python developer with 5+ years specializing in Django web applications and cloud-native solutions.
+
+7.  **Dmitry V.**
+    *   [LinkedIn Profile](https://rs.linkedin.com/in/n8creator)
+    *   **Justification:** Senior Python Engineer with 5+ years in Startups, E-commerce. Specializes in building scalable cloud-based systems.
+
+8.  **Mohsen Hassani**
+    *   [LinkedIn Profile](https://ir.linkedin.com/in/mohsen-hassani)
+    *   **Justification:** Software Engineer with 6+ years, Python/Django developer with 3+ years experience in web development and 5+ years of experience in software development.
+
+9.  **Adeoye Richard**
+    *   [LinkedIn Profile](https://ng.linkedin.com/in/adeoye-richard-56048b12b)
+    *   **Justification:** Backend Engineer with 5+ years of experience in Python and Django.
+
+10. **Astik Gabani**
+    *   [LinkedIn Profile](https://in.linkedin.com/in/astik-gabani)
+    *   **Justification:** Senior Software Engineer with expertise in RESTful APIs, database design, and performance optimisation. As a Python Backend Developer with 5+ years of experience.
+```"
+2025-08-04 17:30:35: task_name="None", task="
+            For each candidate in the provided report, visit their profile link and any other
+            publicly available information to create a 'Unified Candidate Profile'.
+            This profile should consolidate their skills, experience, projects, and any other
+            relevant information into a single, comprehensive document for each candidate.
+        ", agent="Data Aggregator and Synthesizer", status="started"
+2025-08-04 17:31:30: task_name="None", task="
+            For each candidate in the provided report, visit their profile link and any other
+            publicly available information to create a 'Unified Candidate Profile'.
+            This profile should consolidate their skills, experience, projects, and any other
+            relevant information into a single, comprehensive document for each candidate.
+        ", agent="Data Aggregator and Synthesizer", status="completed", output=" Nikhil Sankpal - Python Developer - Tata Consultancy Services | LinkedIn
+Skip to main content
+LinkedIn
+Articles
+People
+Learning
+Jobs
+Games
+Get the app
+Join now
+Sign in
+Sign in to view Nikhil’s full profile
+Sign in
+Welcome back
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+or
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+New to LinkedIn? Join now
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+Nikhil Sankpal
+Sign in to view Nikhil’s full profile
+Sign in
+Welcome back
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+or
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+New to LinkedIn? Join now
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+Python Developer
+Pune, Maharashtra, India
+Contact Info
+Sign in to view Nikhil’s full profile
+Sign in
+Welcome back
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+or
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+New to LinkedIn? Join now
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+1,120 followers
+500+ connections
+See your mutual connections
+View mutual connections with Nikhil
+Sign in
+Welcome back
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+or
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+New to LinkedIn? Join now
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+Join to view profile
+Message
+Sign in to view Nikhil’s full profile
+Sign in
+Welcome back
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+or
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+New to LinkedIn? Join now
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+Tata Consultancy Services
+Report this profile
+About
+Python Developer with 5+ years in web development, specializing in Django & REST APIs.
+Activity
+Follow
+Sign in to view Nikhil’s full profile
+Sign in
+Welcome back
+Email or phone
+Password
+Show
+Forgot password?
+Sign in
+or
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+New to LinkedIn? Join now
+or
+New to LinkedIn? Join now
+By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy .
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this
+Nikhil Sankpal liked this"
+2025-08-04 17:31:30: task_name="None", task="
+            Objectively score each 'Unified Candidate Profile' against the original hiring rubric.
+            For each key criterion in the rubric, provide a score from 1 to 10 and a concise
+            justification for that score. The final output should be a ranked list of candidates.
+        ", agent="Lead Technical Assessor", status="started"
+2025-08-04 17:31:35: task_name="None", task="
+            Objectively score each 'Unified Candidate Profile' against the original hiring rubric.
+            For each key criterion in the rubric, provide a score from 1 to 10 and a concise
+            justification for that score. The final output should be a ranked list of candidates.
+        ", agent="Lead Technical Assessor", status="completed", output="```markdown
+### Candidate Ranking Report
+
+**1. Nikhil Sankpal - Score: 68/100**
+- Experience (Weight 5): 8/10 - *Justification: States 5+ years of experience as a Python Developer.*
+- Python Proficiency (Weight 5): 7/10 - *Justification: States specialization in Django & REST APIs, implying proficiency.*
+- Web Framework Familiarity (Weight 4): 8/10 - *Justification: Specializes in Django, indicating strong familiarity.*
+- OOP Understanding (Weight 4): 6/10 - *Justification: No explicit mention, assuming a base level understanding.*
+- ORM Familiarity (Weight 3): 5/10 - *Justification: No explicit mention, assuming some familiarity through Django.*
+- Database Schemas (Weight 4): 5/10 - *Justification: No explicit mention, assuming basic knowledge.*
+- Version Control (Weight 5): 6/10 - *Justification: No explicit mention, assuming basic knowledge.*
+- Code Design and Maintenance (Weight 5): 6/10 - *Justification: Implied through "web development" but not explicitly stated.*
+- Frontend Integration (Weight 4): 4/10 - *Justification: No explicit mention.*
+- Performance and Architecture (Weight 5): 4/10 - *Justification: No explicit mention.*
+- Data Storage Integration (Weight 4): 5/10 - *Justification: No explicit mention, assuming basic knowledge.*
+```"
